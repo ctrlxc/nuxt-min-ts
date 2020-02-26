@@ -1,5 +1,8 @@
 {
-  "name": "nuxt-min",
+  "name": "nuxt-min-ts",
+  "version": "0.0.1",
+  "description": "nuxt-min-ts",
+  "author": "",
   "scripts": {
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
@@ -10,7 +13,8 @@
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.3.9",
     "nuxt": "^2.11.0",
-    "nuxt-property-decorator": "^2.5.1"
+    "nuxt-property-decorator": "^2.5.1",
+    "nuxt-buefy": "^0.3.2"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.5.7",
