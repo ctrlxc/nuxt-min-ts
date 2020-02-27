@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-min-ts",
+  "name": "nuxt-ts",
   "version": "0.0.1",
-  "description": "nuxt simple sample project / spa mode / nuxt + buefy + typescript",
+  "description": "nuxt typescript project / spa mode / nuxt + buefy + typescript",
   "author": "",
   "license": "UNLICENSED",
   "private" : true,
