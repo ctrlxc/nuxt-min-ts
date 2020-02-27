@@ -3,25 +3,22 @@ export default {
   buildModules: [
     '@nuxt/typescript-build'
   ],
+  css: [
+    '@mdi/font/css/materialdesignicons.min.css' // no cdn
+    // '~assets/style.scss' // for customize buefy
+  ],
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://buefy.github.io/#/documentation
+    // ['nuxt-buefy']
     // ['nuxt-buefy', { css: false, materialDesignIcons: false }]
-    ['nuxt-buefy']
+    ['nuxt-buefy', { materialDesignIcons: false }]
   ],
   plugins: [
     '~/plugins/buefy'
   ],
-  // head: {
-  //   script: [
-  //     { src: '@/assets/buefy/buefy.min.js' }
-  //   ],
-  //   link: [
-  //     { rel: 'stylesheet', href: '@/assets/buefy/buefy.min.css' }
-  //   ]
-  // },
   typescript: {
     typeCheck: {
       eslint: true

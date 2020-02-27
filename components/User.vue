@@ -8,7 +8,9 @@
       </header>
       <div class="card-content">
         <div class="content has-text-centered">
-          <b-icon :icon="user.icon" size="is-large" type="is-primary" />
+          <nuxt-link :to="`users/${user.id}`">
+            <b-icon :icon="user.icon" size="is-large" type="is-primary" />
+          </nuxt-link>
         </div>
       </div>
       <footer class="card-footer">
@@ -26,6 +28,7 @@
 import { Vue, Component, Prop } from 'vue-property-decorator'
 
 export interface IUser {
+  id: string
   firstName: string
   lastName: string
   icon: string

@@ -1,5 +1,6 @@
 <template>
   <section class="section">
+    <h1>Users Index</h1>
     <ul>
       <li v-for="(item, key) of users" :key="key">
         <user :user="item" />
@@ -17,19 +18,19 @@ import { IUser } from '~/components/User.vue'
     User: () => import('~/components/User.vue')
   }
 })
-export default class Index extends Vue {
+export default class UsersIndex extends Vue {
     users: IUser[] = [
       {
-        id: '1',
-        firstName: 'pablo',
-        lastName: 'picasso',
+        id: '2',
+        firstName: 'otomo',
+        lastName: 'katsuhiro',
         icon: 'github-circle'
 
       },
       {
-        id: 'abc',
-        firstName: 'lefthand',
-        lastName: 'ellen',
+        id: '4',
+        firstName: 'otomo',
+        lastName: 'kohei',
         icon: 'github-circle'
       }
     ]

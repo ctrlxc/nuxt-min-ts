@@ -45,11 +45,11 @@
               Misc
             </a>
             <div class="navbar-dropdown">
-              <nuxt-link class="navbar-link is-arrowless" to="/other">
-                Other
+              <nuxt-link class="navbar-link is-arrowless" to="/toast">
+                Toast
               </nuxt-link>
-              <nuxt-link class="navbar-link is-arrowless" to="/test">
-                Test
+              <nuxt-link class="navbar-link is-arrowless" to="/users">
+                Users
               </nuxt-link>
             </div>
           </div>
@@ -98,9 +98,14 @@ export default class Default extends Vue {
       to: { name: 'index' }
     },
     {
-      title: 'Other',
+      title: 'Toast',
       icon: 'lightbulb',
-      to: { name: 'other' }
+      to: { name: 'toast' }
+    },
+    {
+      title: 'Users',
+      icon: 'account-box-multiple',
+      to: { name: 'users' }
     }
   ]
 
